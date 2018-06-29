@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative1">
+
+            <ImageView
+                android:id="@+id/galleryImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:adjustViewBounds="true" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/relative3"
+                android:background="#ffffff"
+                android:layout_below="@+id/relative1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relative5"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/galleryImage"
+                        android:layout_centerHorizontal="true"
+                        android:text="This is news title"
+                        android:textColor="#000000"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative5"
+                    android:id="@+id/relative6"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/sdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:scrollHorizontally="true"
+                        android:ellipsize="end"
+                        android:layout_centerHorizontal="true"
+                        android:text="This is news description bla bla bla..."
+                        android:textColor="#2b2a2a"
+                        android:textSize="13dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relative4"
+                    android:layout_below="@+id/relative6">
+
+                    <TextView
+                         android:id="@+id/author"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="10dp"
+                         android:layout_marginTop="2dp"
+                         android:text="news author"
+                        android:textColor="#6992d4"/>
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="2dp"
+                        android:text="time"
+                        android:textColor="#6992d4"/>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>
